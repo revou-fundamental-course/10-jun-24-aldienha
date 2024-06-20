@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kalkulator Suhu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="page-wrapper">
+      <div class="padding-global">
+        <div class="container-medium">
+          <div class="width-large">
+            <div class="heading-header">
+              <h1>Kalkulator Suhu</h1>
+            </div>
+          </div>
+          <div class="width-large">
+            <div class="paragraph-header">
+              <p>
+                Masukkan suhu dalam salah satu kotak di bawah, lalu klik tombol
+                konversi untuk mendapatkan hasil konversi.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-medium">
+          <div class="form-block">
+            <label for="celcius">Celsius (°C)</label>
+            <input
+              type="number"
+              id="celsiusInput"
+              placeholder="Masukkan Suhu"
+            />
+          </div>
+          <div class="form-block">
+            <label for="fahrenheit">Fahrenheit (°F)</label>
+            <input
+              type="number"
+              id="fahrenheitInput"
+              placeholder="Masukkan Suhu"
+            />
+          </div>
+          <div class="form-block">
+            <label for="kelvin">Kelvin (°K)</label>
+            <input type="number" id="kelvinInput" placeholder="Masukkan Suhu" />
+          </div>
+        </div>
+        <div class="container-medium">
+          <button onclick="convertTemperature()">Konversi</button>
+          <button onclick="resetTemperature()">Reset</button>
+        </div>
+        <div class="container-medium">
+          <div id="result">
+            <h2>Hasil Konversi:</h2>
+            <p id="celsiusOutput">Celsius:</p>
+            <p id="fahrenheitOutput">Fahrenheit:</p>
+            <p id="kelvinOutput">Kelvin:</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
